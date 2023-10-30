@@ -36,16 +36,16 @@ const hoveredIcon = ref(null)
             </div>
           </div>
 
-          <div class="pt-4">
+          <div class="pt-4 hidden md:block">
             <div class="flex flex-col items-center md:items-start">
-              <div class="">
+              <div class="font-en font-medium">
                 <span>Share this series</span>
               </div>
               <div class="w-full px-8 md:px-0 md:mt-2 md:-ml-1.5 flex">
-                <div class="flex gap-2 items-center">
+                <div class="flex gap-6 items-end">
                   <div class="flex w-full justify-center md:justify-start space-lg cursor-pointer">
                     <div
-                      class="scale-100 px-1.5 hover:scale-125"
+                      class="px-1.5 hover:scale-100"
                       @mouseenter="hoveredIcon = 'facebook'"
                       @mouseleave="hoveredIcon = null"
                     >
@@ -55,7 +55,7 @@ const hoveredIcon = ref(null)
                   </div>
                   <div class="flex w-full justify-center md:justify-start space-lg cursor-pointer">
                     <div
-                      class="scale-75 px-1.5 hover:scale-100"
+                      class="px-1.5 hover:scale-100"
                       @mouseenter="hoveredIcon = 'twitter'"
                       @mouseleave="hoveredIcon = null"
                     >
@@ -65,7 +65,7 @@ const hoveredIcon = ref(null)
                   </div>
                   <div class="flex w-full justify-center md:justify-start space-lg cursor-pointer">
                     <div
-                      class="scale-75 px-1.5 hover:scale-100"
+                      class="px-1.5 hover:scale-100"
                       @mouseenter="hoveredIcon = 'whatsapp'"
                       @mouseleave="hoveredIcon = null"
                     >
@@ -75,7 +75,7 @@ const hoveredIcon = ref(null)
                   </div>
                   <div class="flex w-full justify-center md:justify-start space-lg cursor-pointer">
                     <div
-                      class="scale-75 px-1.5 hover:scale-100"
+                      class="px-1.5 hover:scale-100"
                       @mouseenter="hoveredIcon = 'linkedin'"
                       @mouseleave="hoveredIcon = null"
                     >

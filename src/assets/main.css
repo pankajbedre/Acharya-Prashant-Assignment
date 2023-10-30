@@ -3,7 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@media (min-width: 1024px) {
+@layer components {
+  .btn-borderless {
+    --tw-text-opacity: 1;
+    color: rgb(234 88 12 / var(--tw-text-opacity));
+  }
+  .btn-borderless:hover {
+    color: rgb(194 45 1 / var(--tw-text-opacity));
+  }
 }
+
